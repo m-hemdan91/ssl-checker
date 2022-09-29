@@ -1,4 +1,6 @@
 # Prerequisites
+put webhook url in script.sh <br />
+
 create file in home directory called domains that conatin the urls <br />
 touch ~/domains <br />
 https://squadio.com <br />
