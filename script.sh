@@ -1,6 +1,6 @@
 #!/bin/bash
 date_2day=`date +"%Y-%m-%d"`
-webhook_url=https://hooks.slack.com/services/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
+webhook_url=
 
 while read -r domain ; do
 	echo | openssl s_client -servername $domain -connect $domain:443 | openssl x509 -noout -dates | grep notAfter | awk 'BEGIN { FS = "=" } ; { print $2 }' > date_curl
